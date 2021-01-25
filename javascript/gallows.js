@@ -122,8 +122,8 @@
 
   let yes = new Audio("music/yes.wav");
   let no = new Audio("music/no.wav");
-  let defeat =new Audio("music/defeat.wav");
-  let win= new Audio("music/win-sound.wav");
+  let defeat = new Audio("music/defeat.wav");
+  let win = new Audio("music/win-sound.wav");
 
 
   let password_1 = "";
@@ -203,14 +203,14 @@
       if (password == password_1) {
           win.play();
           document.getElementById("alphabet").innerHTML = "ZWYCIĘSTWO!  prawidłowe hasło: " + password + '<br><br><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>';
-          
+
       }
 
       //los
       if (ile_skuch >= 9) {
           defeat.play();
           document.getElementById("alphabet").innerHTML = "PORAŻKA! prawidłowe hasło to: " + password + '<br><br><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>';
-          
+
       }
 
   }
